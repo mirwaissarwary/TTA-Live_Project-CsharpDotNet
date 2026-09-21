@@ -149,7 +149,3 @@ Built as part of a multi-developer Tech Academy live project. I focused on the r
 4. Confirm `Web.config` uses your LocalDB attach path (do not commit shared course credentials).
 5. Set `TheatreCMS3` as the startup project, press F5 (IIS Express).
 6. Open Rent → Rental Requests (`/Rent/RentalRequests`).
-
-## Notes
-
-Team live-project codebase from The Tech Academy. Before any public host: scrub connection strings and secrets; use demo / seed data only. Screenshot set omits older expired-sample data so the README stays current.
