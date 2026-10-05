@@ -145,10 +145,16 @@ Built as part of a multi-developer Tech Academy live project. I focused on the r
 - **Turning stories into usable UI:** Sorting by start time, marking requests expired after a 7-day grace period, and showing time-till-start / time-remaining on accordion cards made the Index useful for staff scanning a growing list — not just a raw database dump.
 
 
-## How to run
+## How to run locally
 
-This public repo is the write-up: README, screenshots, and the rental-request source under `src/Rent/`. It does **not** include `TheatreCMS3.sln`, `Web.config`, or the rest of the team CMS, so nothing here starts with F5.
+This GitHub repo is for **reading** the rental-request work: README, screenshots, and the `src/Rent/` source slice. It is not a standalone runnable solution (`TheatreCMS3.sln` and `Web.config` stay in the full local CMS).
 
-Anyone reviewing the repo can read the slice and screenshots without installing the solution. The slice will not compile on its own. `RentalRequestsController` uses `TheatreCMS3.Models.ApplicationDbContext`, and the views use the shared layout and script bundles from the full TheatreCMS3 project.
+**To review on GitHub (no install):** open the screenshots above and browse `src/Rent/` — controller, model, views, CSS, and JS. The slice depends on the shared TheatreCMS3 layout and `ApplicationDbContext`, so it will not compile by itself.
 
-To run the feature as a clickable app, use that full local solution (not this repo): Visual Studio 2019+ with the ASP.NET / .NET Framework workload, SQL Server LocalDB or SQL Express, NuGet restore, and a `Web.config` that points at **your** database. Do not commit course or shared credentials. Set `TheatreCMS3` as the startup project, press F5, and open `/Rent/RentalRequests`.
+**To click through the feature on your machine** (full local TheatreCMS3 solution):
+
+1. **Prerequisites:** Visual Studio 2019+ with the ASP.NET / .NET Framework workload; SQL Server LocalDB or SQL Express.
+2. Open the full local `TheatreCMS3.sln` (not this public repo root).
+3. Restore NuGet packages; use a local `Web.config` that points at **your** database (do not commit shared credentials).
+4. Set `TheatreCMS3` as the startup project and press F5.
+5. Open `/Rent/RentalRequests` for the Index, then Create / Edit / Details / Delete as needed.
