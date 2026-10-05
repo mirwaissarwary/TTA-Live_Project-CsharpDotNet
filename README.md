@@ -156,4 +156,3 @@ This repo is **not a runnable app** for GitHub visitors. The public contents are
 
 **What you cannot do from this repo alone:** compile or run TheatreCMS3. The slice depends on shared project pieces that are not published (`ApplicationDbContext`, shared layout, script bundles, and the rest of the CMS).
 
-> **Later:** a tiny standalone demo of Rental Requests (so visitors can run something without the full CMS) may be added here.
