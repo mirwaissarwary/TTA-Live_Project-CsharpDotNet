@@ -4,7 +4,7 @@ ASP.NET MVC + Entity Framework module for managing venue / production **rental r
 
 **My role:** On The Tech Academy live-project team, I owned the **rental request** feature end-to-end — Entity Framework model, full CRUD under the `Rent` area, index sorting by start time, automatic expiry marking (7 days after end), accordion cards with time-till-start / time-remaining, current-vs-expired toggle, and date-picker UX on create/edit.
 
-> **Live demo:** _coming soon (Azure App Service after secrets scrub)_
+> **On GitHub:** This repo is the portfolio write-up — README, screenshots, and a reviewable rental-request code slice under [`src/Rent/`](src/Rent/). There is no hosted site. The slice will not build by itself; see [How to run](#how-to-run) and [`src/Rent/CODE_NOTES.md`](src/Rent/CODE_NOTES.md).
 
 ## Screenshots
 
@@ -118,17 +118,21 @@ $(function () {
 
 **Why it mattered:** Free-typed DateTimes are easy to mistype; a picker speeds entry and cuts validation noise on the create form.
 
-## Project layout (rental slice)
+## Project layout (this repo)
 
 ```
-TheatreCMS3/
-  Areas/Rent/
-    Controllers/RentalRequestsController.cs
-    Models/RentalRequest.cs
-    Views/RentalRequests/   (Index, Create, Edit, Details, Delete)
+README.md
+images/                 screenshots of the rental-request UI
+src/Rent/               reviewable rental-request slice (see CODE_NOTES.md)
+  Controllers/RentalRequestsController.cs
+  Models/RentalRequest.cs
+  Views/RentalRequests/ Index, Create, Edit, Details, Delete
+  Content/Rent.css
+  Scripts/Rent.js
+  RentAreaRegistration.cs
 ```
 
-Full solution: `TTA_Csharp_LiveProject` / `TheatreCMS3`. Other areas of the site were owned by teammates.
+The full solution stays local as `TTA_Csharp_LiveProject` / `TheatreCMS3`. Other areas of the site were owned by teammates and are not in this public repo. This repo does not include `TheatreCMS3.sln`.
 
 ## Team context
 
@@ -141,11 +145,10 @@ Built as part of a multi-developer Tech Academy live project. I focused on the r
 - **Turning stories into usable UI:** Sorting by start time, marking requests expired after a 7-day grace period, and showing time-till-start / time-remaining on accordion cards made the Index useful for staff scanning a growing list — not just a raw database dump.
 
 
-## How to run locally
+## How to run
 
-1. **Prerequisites:** Visual Studio 2019+ with ASP.NET / .NET Framework workload, SQL Server LocalDB (or SQL Express). VS Code is fine for editing.
-2. Open `TTA_Csharp_LiveProject` / `TheatreCMS3.sln`.
-3. Restore NuGet packages.
-4. Confirm `Web.config` uses your LocalDB attach path (do not commit shared course credentials).
-5. Set `TheatreCMS3` as the startup project, press F5 (IIS Express).
-6. Open Rent → Rental Requests (`/Rent/RentalRequests`).
+This public repo is the write-up: README, screenshots, and the rental-request source under `src/Rent/`. It does **not** include `TheatreCMS3.sln`, `Web.config`, or the rest of the team CMS, so nothing here starts with F5.
+
+Anyone reviewing the repo can read the slice and screenshots without installing the solution. The slice will not compile on its own. `RentalRequestsController` uses `TheatreCMS3.Models.ApplicationDbContext`, and the views use the shared layout and script bundles from the full TheatreCMS3 project.
+
+To run the feature as a clickable app, use that full local solution (not this repo): Visual Studio 2019+ with the ASP.NET / .NET Framework workload, SQL Server LocalDB or SQL Express, NuGet restore, and a `Web.config` that points at **your** database. Do not commit course or shared credentials. Set `TheatreCMS3` as the startup project, press F5, and open `/Rent/RentalRequests`.

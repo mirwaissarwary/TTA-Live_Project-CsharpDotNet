@@ -1,0 +1,486 @@
+﻿/* ▼ This ▼ is for you to easily reference the colors on the Site.css page */
+/* Do not uncomment these color variables */
+
+/* CSS color variables */
+/*:root {*/ /* Color palette for css */
+/*--main-color: #DB1A11;*/ /* Red */
+/*--main-color--light: #F04D44;*/ /* Red, a shade lighter */
+/*--secondary-color: #D6972A;*/ /* Yellow gold */
+/*--light-color: #FFFBFB;*/ /* White */
+/*--dark-color: #000000;*/ /* Black */
+/*--secondary-color--dark: #9D7C39;*/ /* Dark Gold */
+/*--light-blue: rgb(93, 123, 244)*/ /*Light Blue - Added color on top of original*/
+/*}*/
+
+
+
+
+/*-------------------------------------CREATE PAGE (RENTAL)--------------------------------*/
+.rental-create--createrentalheading{
+    display:flex;
+    justify-content:center;
+    margin-top:70px;
+}
+
+
+/*---------BUTTONS------------*/
+.rental-create--dropdownbutton {
+    margin-right:50%;
+    margin-left:42%;
+    background-color:var(--light-color);
+    color:var(--dark-color);
+
+}
+
+.rental-create--submitbutton {
+    background-color: var(--main-color);
+    margin-right: 50%;
+    margin-left: 53%;
+    margin-top: 20px;
+}
+
+.rental-create--backbutton {
+    background-color:var(--light-color);
+    margin-right:44%;
+    margin-left:43%;
+    margin-bottom:20px;
+    color:var(--dark-color);
+}
+
+
+
+/*-------FORM STYLING-------*/
+.rental-create--formcontrols {
+    border-color: var(--secondary-color); /*gives input field a default border*/
+    border-width: 3px;
+}
+
+.rental-create--formcontrols:focus {
+        box-shadow: none;  /*eliminates default blue outline color when user clicks inside form label*/
+        border: 2px solid var(--main-color); /*sets outline color when input field clicked in (for text fields) this overrides bootstrap blue outline when focused*/
+    }
+
+.rental-create--formhorizontal {
+    border-color: var(--secondary-color);
+    border-width:3px;
+}
+
+
+.rental-create--formlabel1:focus {
+    border-color: var(--main-color);
+    outline: 3px solid var(--main-color);
+}
+
+.rental-form--container {
+    color:var(--main-color);
+    border: double;
+    margin-top: 100px;
+}
+
+.rental-create--formheading {
+    margin-top: 20px;
+    font-size: xx-large;
+    padding-left: 44%;
+    color: var(--main-color);
+}
+
+#rental-create--formheading {   /*for the ID version of above class*/
+    margin-top: 20px;
+    font-size: xx-large;
+    display:flex;
+    justify-content:center;
+    color: var(--main-color);
+}
+
+
+.rental-create--formgroupheading1 {
+    padding-left:120px;
+}
+
+.rental-create--formgroupheading2 {
+    padding-left:120px;
+}
+
+.rental-create--formgroupheading3 {
+    padding-left:120px;
+}
+
+
+.rental-create-flawslabel {
+    max-width:100%;   /*this keeps the label flaws /damages from being broken into two lines*/
+}
+
+/*---------------------------------END CREATE PAGE (RENTAL)--------------------------------*/
+
+
+
+
+/*----------------------------------EDIT PAGE (RENTAL)-------------------------------------*/
+.rental-edit--editrentalheading {
+    display:flex;
+    justify-content:center;
+    margin-top:70px;
+}
+
+#rental-edit--formheading { /*for the ID version of above class*/
+    margin-top: 20px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+}
+
+.rental-edit--dropdownbutton {
+    margin-right: 50%;
+    margin-left: 42%;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+/*---------BUTTONS------------*/
+.rental-edit--savebutton {
+    background-color: var(--main-color);
+    margin-right: 50%;
+    margin-left: 54%;
+    margin-top: 20px;
+}
+
+.rental-edit--backbutton {
+    background-color: var(--light-color);
+    margin-right: 44%;
+    margin-left: 43%;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+
+/*-------FORM STYLING-------*/
+.rental-edit--formcontrols {
+    border-color: var(--secondary-color); /*gives input field a default yellow/gold border*/
+    border-width: 3px;
+}
+
+.rental-edit--formcontrols:focus {
+    border-color: var(--secondary-color); /*gives input field a default border*/
+    border-width: 3px;
+    box-shadow:none;
+}
+
+.rental-edit--formhorizontal {    
+    border-color: var(--secondary-color);
+    border-width: 3px;
+}
+
+.rental-edit--formcontainer {
+    color: var(--main-color);
+    border: double;
+    margin-top: 100px;
+}
+
+.rental-edit--formheading {
+    margin-top:20px;
+    font-size:xx-large;
+    padding-left: 44%;
+    color: var(--main-color);
+}
+
+.rental-edit--formgroupheading1 {
+    padding-left: 120px;
+}
+
+.rental-edit--formgroupheading2 {
+    padding-left: 120px;
+}
+
+.rental-edit--formgroupheading3 {
+    padding-left: 120px;
+}
+
+.rental-edit--flawslabel {
+    max-width:100%;
+}
+/*------------------------------END EDIT PAGE (RENTAL)-------------------------------------*/
+/*----------------------------BEGIN INDEX PAGE (RENTAL)-------------------------------------*/
+.rental-index--rentalsectionheading {
+    margin-top: 20px;
+    font-size: xx-large;
+    color: var(--light-color);
+}
+
+.rental-index--rentalsectionghosttextA { /*this is our red line under the Rental heading*/
+    color: var(--main-color);
+    font-size:xx-large;
+    margin-top:-27px;  /*keeps red line close to above heading*/
+}
+
+/* Outer Row that holds all columns/items*/
+.rental-index--outerrow {
+    padding-left:50px;
+    padding-right:50px;
+}
+
+
+/*-------RENTAL CARD CONTAINER 1A---------*/
+.rental-index--rentalcolumns {
+    min-width:260px; /*keeps each card as same size even if there aren't enough items to fill the row*/
+    max-width:260px; /*""*/
+}
+
+.rental-index--card1A {
+    border: 5px solid var(--light-color);
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.rental-index--innerphotocontainer1A {
+    background-color: var(--dark-color);
+}
+.rental-index--rentalsectionimage1 {
+    height: 100px;
+    width: 150px;
+    margin-left: 16%; /*keeps image centered in container/card*/
+    margin-top: 20px;
+}
+
+.rental-index--rentalsectiontext1A {
+    margin-bottom: -25px;
+    margin-top:20px;
+    color:var(--dark-color);
+    font-weight:bold;
+}
+
+.rental-index--buttoncontainer1A {
+    margin-top:-20px;
+    margin-bottom:10px;
+}
+
+.rental-index--rentalsectionghosttextB {
+    color: var(--dark-color);
+}
+
+/*INDEX PAGE BUTTONS ON EACH CARD*/
+
+.rental-index--deletebutton1A {
+    margin-left:35px;
+}
+
+.rental-index--detailsbutton1A {
+    margin-left:-10px;   /*keeps buttons at a size where they fit on one line without adding additional margins on edit button*/
+}
+
+.rental-index--editbutton1A {
+
+}
+
+/*2nd section of cards for RENTALEQUIPMENT*/
+
+
+/*3rd section of cards for RENTALROOM*/
+.rental-index--squarefootagebadge {
+    margin-left:90px;
+}
+
+
+/*----------------------------END INDEX PAGE (RENTAL)-------------------------------------*/
+/*----------------------------RentalRequest Index-----------------------------------------*/
+.rentalRequests-Index--accordionContainer {
+    /*Control the size*/
+    min-width: 500px;
+    box-shadow: 0 0 30px var(--light-color);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Broadway;
+    /*base color*/
+    background: var(--main-color--light);
+}
+
+.rentalRequests-Index--accordionLabel,
+.rentalRequests-Index--accordionContent {
+    padding: 14px 20px;
+}
+
+.rentalRequests-Index--accordionLabel{
+    display:block;
+    color: var(--light-color);
+    font-weight: 900;
+    cursor:pointer;
+    /*For the open and close indicator*/
+    position: relative;
+    transition: background 0.1s;
+}
+
+.rentalRequests-Index--accordionLabel:hover{
+    background: var(--secondary-color--dark);
+}
+
+/*To create the open and close indicator*/
+/*Using ::after to create virtual element (child to label) for styling*/
+.rentalRequests-Index--accordionLabel::after {
+    /*content will hold the triangle image*/
+    content: "";
+    position: absolute;
+    /*Vertically centering the triangle*/
+    top: 50%;
+    transform: translateY(-50%);
+    /*matching the padding of accordionLabel*/
+    right: 20px;
+    /*width and height of the triangle*/
+    width: 12px;
+    height: 6px;
+    /*using Scalable Vector Graphics (SVG) for image*/
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    /*image is to be contained within our specified width and height */
+    background-size: contain;
+    /*For rotation animation*/
+    transition: transform 0.4s;
+}
+
+.rentalRequests-Index--accordionContent{
+    background: var(--secondary-color);
+    line-height:1.6;
+    font-size: 0.85em;
+    /*Content is hidden*/
+    display:none;
+}
+
+.rentalRequests-Index--accordionInput{
+    /*Hide the input checkbox*/
+    display:none;
+}
+/*CSS LOGIC: when input is checked target the content*/
+.rentalRequests-Index--accordionInput:checked ~ .rentalRequests-Index--accordionContent{
+    display:block;
+}
+
+/*Triangle animation*/
+.rentalRequests-Index--accordionInput:checked ~ .rentalRequests-Index--accordionLabel::after{
+    transform: translateY(-50%) rotate(0.5turn);
+}
+
+/* Move label item to the right side of label section*/
+.rentalRequests-Index--accordionLabelRT{
+    position:absolute;
+    top:15px;
+    right:50px;
+}
+/*Button to toggle between Expired and Current rental requests*/
+.rentalRequests-Index--toggleButton {
+    background-color: var(--secondary-color--dark);
+    align-content: flex-end;
+}
+
+.rentalRequests-Index--toggleButton:hover {
+    background: var(--secondary-color);
+}
+
+/*Starts the display with Expired Rental Request Cards as hidden*/
+.RRExpiredCard {
+    display: none;
+}
+/*----------------------------END RentalRequest Index-----------------------------------------*/
+/*----------------------------RentalRequest Create-------------------------------------------*/
+.rentalRequests-Create--Heading {
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin: 5px auto 5px auto;
+    padding:20px 20px;
+    border-radius:20px;
+}
+
+.rentalRequest-Create--FormContainer {
+    background-color: var(--secondary-color--dark);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+}
+
+/*Center first div of class form-group*/
+.form-group > div:first-of-type{
+    margin:auto;
+}
+
+.rentalRequest-Create--SubmitBtn{
+    background-color: var(--secondary-color--dark);
+    border-radius:10px;
+    display:block;
+    width:50vw;
+    margin:auto;
+    color: var(--dark-color);
+}
+.rentalRequest-Create--SubmitBtn:hover{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--light-color);
+}
+.rentalRequest-Create--BackToListBtn {
+    background-color: var(--main-color--light);
+    border-radius: 10px;
+    display: block;
+    width: 50vw;
+    margin:auto;
+    color:var(--dark-color);
+}
+.rentalRequest-Create--BackToListBtn:hover{
+    background-color: var(--main-color);
+    cursor:pointer;
+    color: var(--light-color);
+}
+.rentalRequest-Create--Input{
+    outline: 3px solid var(--secondary-color);
+    background-color: var(--dark-color);
+
+}
+.rentalRequest-Create--Input:focus{
+    outline: 10px solid var(--secondary-color);
+    background-color: var(--light-color);
+}
+.rentalRequest-Create--ValidationMsg{
+    background-color:var(--main-color--light);
+    color: var(--light-color);
+}
+/* CSS color variables */
+/*:root {*/ /* Color palette for css */
+/*--main-color: #DB1A11;*/ /* Red */
+/*--main-color--light: #F04D44;*/ /* Red, a shade lighter */
+/*--secondary-color: #D6972A;*/ /* Yellow gold */
+/*--light-color: #FFFBFB;*/ /* White */
+/*--dark-color: #000000;*/ /* Black */
+/*--secondary-color--dark: #9D7C39;*/ /* Dark Gold */
+/*--light-blue: rgb(93, 123, 244)*/ /*Light Blue - Added color on top of original*/
+/*}*/
+/*---------------------------END RentalRequest Create----------------------------------------*/
+
+
+
+/*                                     */
+.rentalSurvey-Form--Styling{
+
+}
+.rentalSurvey-Form--InputStyling:focus {
+    border: 2px solid var(--secondary-color);
+    box-shadow:none;
+
+}
+.rentalSurvey-Create--Styling {
+    background: var(--secondary-color);
+    color: var(--light-color);
+ 
+}
+.rentalSurvey-Create--Styling2 {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+.rentalSurvey-ActionLink-Styling{
+   
+   text-align:center;
+   
+}
+.rentalSurvey-FormBackground-Styling {
+    background: var(--main-color--light);
+}
+.rentalSurvey- {
+   
+}
+
+/*placeholders text form general feedback 
+edit */
+
