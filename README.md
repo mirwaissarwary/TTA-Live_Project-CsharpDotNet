@@ -147,7 +147,7 @@ Built as part of a multi-developer Tech Academy live project. I focused on the r
 
 ## How to run locally
 
-This repo is **not a runnable app** for GitHub visitors. The public contents are the README, screenshots, and a reviewable rental-request source slice under `src/Rent/`. The full TheatreCMS3 solution was a shared Tech Academy live-project codebase and is **not** included here, so there is no `TheatreCMS3.sln` to open and nothing to F5 from this clone.
+This repo is **not a runnable app** for GitHub visitors. The public contents are the README, screenshots, and a reviewable rental-request source slice under `src/Rent/`. The full TheatreCMS3 solution was a shared Tech Academy live-project codebase and is **not** included here, so there is no Visual Studio solution in this clone to open and run.
 
 **What you can do from GitHub:**
 
@@ -155,3 +155,5 @@ This repo is **not a runnable app** for GitHub visitors. The public contents are
 2. Browse `src/Rent/` for the controller, model, views, CSS, and JS that implement Rental Requests (including the Area-aware `Url.Action` links).
 
 **What you cannot do from this repo alone:** compile or run TheatreCMS3. The slice depends on shared project pieces that are not published (`ApplicationDbContext`, shared layout, script bundles, and the rest of the CMS).
+
+> **Later:** a tiny standalone demo of Rental Requests (so visitors can run something without the full CMS) may be added here.
