@@ -147,14 +147,8 @@ Built as part of a multi-developer Tech Academy live project. I focused on the r
 
 ## How to run locally
 
-This GitHub repo is for **reading** the rental-request work: README, screenshots, and the `src/Rent/` source slice. It is not a standalone runnable solution (`TheatreCMS3.sln` and `Web.config` stay in the full local CMS).
+This public repo is for **review**: README, screenshots, and the rental-request source under `src/Rent/`. The full TheatreCMS3 solution is **not** published here, so visitors cannot F5 a complete CMS from this clone alone.
 
-**To review on GitHub (no install):** open the screenshots above and browse `src/Rent/` — controller, model, views, CSS, and JS. The slice depends on the shared TheatreCMS3 layout and `ApplicationDbContext`, so it will not compile by itself.
+**On GitHub:** open the screenshots and browse `src/Rent/` (controller, model, views, CSS, JS). The slice depends on shared TheatreCMS3 pieces (`ApplicationDbContext`, layout, bundles), so it will not compile by itself.
 
-**To click through the feature on your machine** (full local TheatreCMS3 solution):
-
-1. **Prerequisites:** Visual Studio 2019+ with the ASP.NET / .NET Framework workload; SQL Server LocalDB or SQL Express.
-2. Open the full local `TheatreCMS3.sln` (not this public repo root).
-3. Restore NuGet packages; use a local `Web.config` that points at **your** database (do not commit shared credentials).
-4. Set `TheatreCMS3` as the startup project and press F5.
-5. Open `/Rent/RentalRequests` for the Index, then Create / Edit / Details / Delete as needed.
+**On my machine:** I run the feature in the full local `TheatreCMS3` solution (Visual Studio + LocalDB/SQL Express), then open `/Rent/RentalRequests` for Index / Create / Edit / Details / Delete.
